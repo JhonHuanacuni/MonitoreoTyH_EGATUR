@@ -48,7 +48,7 @@ session_start();
                     <p>Wrong Password</p>
                     </div><br>";
 
-            echo "<a href='login.php'><button class='btn'>Go Back</button></a>";
+            echo "<a href='index.php'><button class='btn'>Go Back</button></a>";
           }
 
         } else {
@@ -66,7 +66,7 @@ session_start();
 
         ?>
 
-        <header>Login</header>
+        <header>EGATUR</header>
         <hr>
         <form action="#" method="POST">
 
@@ -75,12 +75,12 @@ session_start();
 
             <div class="input-container">
               <i class="fa fa-envelope icon"></i>
-              <input class="input-field" type="email" placeholder="Email Address" name="email">
+              <input class="input-field" type="email" placeholder="Correo" name="email">
             </div>
 
             <div class="input-container">
               <i class="fa fa-lock icon"></i>
-              <input class="input-field password" type="password" placeholder="Password" name="password">
+              <input class="input-field password" type="password" placeholder="Contraseña" name="password">
               <i class="fa fa-eye toggle icon"></i>
             </div>
 
@@ -91,8 +91,6 @@ session_start();
             </div>
 
           </div>
-
-
 
           <input type="submit" name="login" id="submit" value="Login" class="button">
 
