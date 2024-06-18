@@ -13,18 +13,16 @@ if (!isset($_SESSION['username'])) {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
 
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -36,32 +34,24 @@ if (!isset($_SESSION['username'])) {
     <header class="navbar-section">
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><i class="bi bi-chat"></i> Brag Spot</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand" href="#"><i class="bi bi-chat"></i> EGATUR</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#home">Home</a>
+                            <a class="nav-link" aria-current="page" href="#home">Panel principal</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#services">services</a>
+                            <a class="nav-link" href="#services">Reportes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">about us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact">contact</a>
+                            <a class="nav-link" href="#about">Ver detalles </a>
                         </li>
                         <li class="nav-item">
                             <div class="dropdown">
-                                <a class='nav-link dropdown-toggle' href='edit.php?id=$res_id' id='dropdownMenuLink'
-                                    data-bs-toggle='dropdown' aria-expanded='false'>
+                                <a class='nav-link dropdown-toggle' href='edit.php?id=$res_id' id='dropdownMenuLink' data-bs-toggle='dropdown' aria-expanded='false'>
                                     <i class='bi bi-person'></i>
                                 </a>
 
@@ -99,33 +89,39 @@ if (!isset($_SESSION['username'])) {
     </header>
 
 
-    <div class="name">
+    <!--     <div class="name">
         <center>Welcome
             <?php
-            // echo $_SESSION['valid'];
-            
+
             echo $_SESSION['username'];
 
             ?>
             !
         </center>
-    </div>
+    </div> -->
 
     <!-- hero section  -->
 
     <section id="home" class="hero-section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-12 col-sm-12 text-content">
-                    <h1>the digital service you really want</h1>
-                    <p>We build effective strategies to help you reach customers and prospects across the entire web.
-                    </p>
-                    <button class="btn"><a href="#">Estimate Project</a></button>
+            <div class="sidebar">
+                <div class="sidebar-item">
+                    <p>hola</p>
                 </div>
-                <div class="col-lg-8 col-md-12 col-sm-12">
-                    <img src="images/hero-image.png" alt="" class="img-fluid">
+                <div class="sidebar-item">
+                    <p>hola</p>
                 </div>
-
+                <div class="sidebar-item">
+                    <p>hola</p>
+                </div>
+                <div class="sidebar-item">
+                    <p>hola</p>
+                </div>
+            </div>
+            <div class="main">
+                <div class="top-bar"></div>
+                <div class="main-content"></div>
+                <div class="bottom-right"></div>
             </div>
         </div>
     </section>
@@ -362,8 +358,7 @@ if (!isset($_SESSION['username'])) {
                             </div>
 
                             <div class="col-md-12">
-                                <textarea class="form-control" name="message" rows="5" placeholder="Message"
-                                    required></textarea>
+                                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
                             </div>
 
                             <div class="col-md-12 text-center">
@@ -405,8 +400,7 @@ if (!isset($_SESSION['username'])) {
                 <div class="col-lg-1 col-md-12 col-sm-12">
                     <!-- back to top  -->
 
-                    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-                            class="bi bi-arrow-up-short"></i></a>
+                    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
                 </div>
 
             </div>
@@ -419,9 +413,7 @@ if (!isset($_SESSION['username'])) {
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 
 </html>
