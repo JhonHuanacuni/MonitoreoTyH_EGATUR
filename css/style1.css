@@ -122,8 +122,8 @@ body {
     transition: all 0.3s;
     padding: 0 15px;
     margin: auto;
-    justify-content: center !important;
-    align-items: center !important;
+    justify-content: center ;
+    display: flex;
 }
 
 .btn:hover {
