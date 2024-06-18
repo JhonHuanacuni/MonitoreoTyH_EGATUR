@@ -37,12 +37,10 @@ session_start();
           /* $decrypt = password_verify($pass, $password); */
 
           /* if ($decrypt) */
-          if ($pass==$password) {
+          if ($pass == $password) {
             $_SESSION['id'] = $row['id'];
             $_SESSION['username'] = $row['username'];
             header("location: home.php");
-
-
           } else {
             echo "<div class='message'>
                     <p>Wrong Password</p>
@@ -50,28 +48,22 @@ session_start();
 
             echo "<a href='index.php'><button class='btn'>Go Back</button></a>";
           }
-
         } else {
           echo "<div class='message'>
                     <p>Wrong Email or Password</p>
                     </div><br>";
 
           echo "<a href='login.php'><button class='btn'>Go Back</button></a>";
-
         }
-
-
       } else {
 
-
-        ?>
+      ?>
 
         <header>EGATUR</header>
         <hr>
         <form action="#" method="POST">
 
           <div class="form-box">
-
 
             <div class="input-container">
               <i class="fa fa-envelope icon"></i>
@@ -86,23 +78,24 @@ session_start();
 
             <div class="remember">
               <input type="checkbox" class="check" name="remember_me">
-              <label for="remember">Remember me</label>
-              <span><a href="forgot.php">Forgot password</a></span>
+              <label for="remember">Recuerdame</label>
+              <span><a href="forgot.php">Perdi mi contraseña</a></span>
             </div>
 
           </div>
 
-          <input type="submit" name="login" id="submit" value="Login" class="button">
+          <input class="btn" type="submit" name="login" id="submit" value="INGRESAR">
+
 
           <div class="links">
-            Don't have an account? <a href="signup.php">Signup Now</a>
+            No tienes una cuenta? <a href="signup.php">Regristrate ahora</a>
           </div>
 
         </form>
-      </div>
-      <?php
+    </div>
+  <?php
       }
-      ?>
+  ?>
   </div>
   <script>
     const toggle = document.querySelector(".toggle"),
