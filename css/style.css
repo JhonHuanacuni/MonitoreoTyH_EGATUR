@@ -88,7 +88,7 @@
 
 .hero-section {
     padding: 20px;
-    background: #2B547E;
+    background: #ffc3c3;
 }
 
 .hero-section .text-content {
@@ -583,4 +583,14 @@ footer p {
 
 .btn:hover {
     opacity: 0.7;
+}
+
+.hero-section .home-principal{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-principal .panel-principal{
+    display: flex;
 }

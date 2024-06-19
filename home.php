@@ -21,10 +21,10 @@ if (!isset($_SESSION['username'])) {
     <title>Homepage</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v=<?php echo time(); ?>">
+
 </head>
 
 <body>
@@ -103,26 +103,19 @@ if (!isset($_SESSION['username'])) {
     <!-- hero section  -->
 
     <section id="home" class="hero-section">
-        <div class="container">
-            <div class="sidebar">
-                <div class="sidebar-item">
-                    <p>hola</p>
-                </div>
-                <div class="sidebar-item">
-                    <p>hola</p>
-                </div>
-                <div class="sidebar-item">
-                    <p>hola</p>
-                </div>
-                <div class="sidebar-item">
-                    <p>hola</p>
-                </div>
+        <div class="home-principal">
+            <div class="titulo">
+                <p>Temperatura y Humedad</p>
             </div>
-            <div class="main">
-                <div class="top-bar"></div>
-                <div class="main-content"></div>
-                <div class="bottom-right"></div>
-            </div>
+            <section class="panel-principal">
+                <div class="grafica-principal">
+                    Panel
+                </div>
+                <div class="Datos-generales">
+                    Datos generales
+                </div>
+            </section>
+
         </div>
     </section>
 
