@@ -105,7 +105,7 @@ if (!isset($_SESSION['username'])) {
     <section id="home" class="hero-section">
         <div class="home-principal">
             <div class="titulo">
-                <p>Temperatura y Humedad</p>
+                <h1>Temperatura y Humedad</h1>
             </div>
             <section class="panel-principal">
                 <div class="grafica-principal">

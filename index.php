@@ -54,7 +54,7 @@ session_start();
                     <p>Wrong Email or Password</p>
                     </div><br>";
 
-          echo "<a href='login.php'><button class='btn'>Go Back</button></a>";
+          echo "<a href='index.php'><button class='btn'>Go Back</button></a>";
         }
       } else {
 
